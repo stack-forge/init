@@ -1,0 +1,15 @@
+name: "Stackforge Init"
+description: "Initialize your stackforge environment"
+branding:
+  icon: 'cloud'
+  color: 'blue'
+inputs:
+  config_file:
+    description: "Stackforge's config file"
+    required: true
+  api_key: 
+    description: "Stackforge's API key"
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
